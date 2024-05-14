@@ -1,0 +1,191 @@
+.container {
+    text-align: center; 
+    background-color: 00534F;
+}
+
+img {
+    display: block; 
+    margin: auto; 
+    width: 235px;
+    height: 80px;
+    position: relative;
+}
+
+body {
+    font-family: Helvetica;
+    background-color: #00534F;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1F6E6F;
+  }
+
+.form {
+    background: #ffffff;
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+      0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+      0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    position: relative;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .form .label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .form .label:has(input:focus) .title {
+    top: 0;
+    left: 0;
+    color: #00534F;
+  }
+  .form .label .title {
+    padding: 3 10px;
+    transition: all 300ms;
+    font-size: 12px;
+    color: #00534F;
+    font-weight: 600;
+    width: -moz-fit-content;
+    width: fit-content;
+    top: 15px;
+    position: relative;
+    left: 15px;
+    background: #ffffff;
+  }
+
+  .input-field + i {
+    position: absolute;
+    top: 43px; 
+    bottom: 50px;
+    right: 15px; 
+    transform: translateY(-50%); 
+    color: #7FCECB;
+    cursor: pointer; 
+}
+
+  .form .input-field {
+    width: auto;
+    height: 50px;
+    text-indent: 15px;
+    border-radius: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #2D9596;
+    transition: all 0.3s;
+    caret-color: #000000;
+    color: #000000;
+    font-size: 15px;
+  }
+  
+  .form .input-field:hover {
+    border-color: #00534F;
+  }
+  
+  .input-field + i:hover {
+    color: #00534F; 
+}
+
+  .form .input-field:focus {
+    border-color: #00534F;
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000000;
+}
+
+  .pass-icon{
+    position: absolute;
+    bottom: 270px;
+    text-align: right;
+    cursor: pointer;
+  }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.flex-row > div > label {
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+}
+
+.span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+  .form .checkout-btn {
+    width: 350px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    fill: #fff;
+    color: #fff;
+    border: 2px solid transparent;
+    background: #00534F;
+    transition: all 200ms;
+    text-decoration: none;
+  }
+  .form .checkout-btn:active {
+    scale: 0.95;
+  }
+  
+  .form .checkout-btn:hover {
+    color: #F1FADD;
+    border: 2px solid #3CBEBF;
+    background-color: #3CBEBF;
+  }
+  
+  .p{
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    color: #000000;
+  }
+  a {
+    font-size: 13px;
+    text-align: right;
+    text-decoration: underline;
+    color: black;
+  }
+  
+  a:hover {
+    color: #3CBEBF;
+  }
+  

@@ -1,0 +1,99 @@
+.container {
+    text-align: center; /* Mengatur teks dan gambar menjadi terpusat horizontal */
+    background-color: 00534F;
+}
+
+img {
+    display: block; /* Membuat gambar menjadi elemen blok */
+    margin: auto; /* Mengatur margin otomatis untuk gambar */
+    width: 235px;
+    height: 80px;
+}
+
+body {
+    font-family: Helvetica;
+    background-color: #00534F;
+  }
+  
+  .login-container {
+    width: 383px;
+    height: 388px;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1F6E6F;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-family: Helvetica;
+    font-size: 10px;
+    color: #00534F;
+    margin-bottom: 5px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 300px;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="checkbox"] {
+    text-align: left;
+    margin-right: 5px;
+  }
+  
+  button[type="submit"] {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    height: 35px;
+    background-color: #3CBEBF;
+    color: #11494A;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #00534F;
+    color: #F1FADD;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  p {
+    margin-top: 20px;
+    text-align: center;
+  }
