@@ -1,87 +1,102 @@
-body{
+body {
     font-family: Helvetica;
     background-color: #F1FADD;
-    margin-left: 90px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.content{
+.content, .content-2 {
     display: flex;
+    flex-direction: row; /* Default to row for larger screens */
     justify-content: center;
     align-items: center;
-    width: 90%;
-    margin: 65px;
+    width: 100%;
+    margin: 65px 0;
+    padding: 0 20px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
-.content-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin-top: 65px;
-}
-
-.text{
+.text, .text-2 {
     flex: 1;
-    width: 900px;
+    margin: 0 25px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items in a column */
+    justify-content: center; /* Center items vertically */
+}
+
+.text h2, .text-2 h2 {
+    font-size: 80px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    color: #00534F;
+    font-weight: bold;
+}
+
+.text p, .text-2 p {
+    width: 1025px;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0 50px; /* Indent paragraphs */
+}
+
+.image-1, .image-2 {
+    flex: 1;
+    text-align: center;
     margin: 0 25px;
 }
 
-.text-2{
-    flex: 1;
-    width: 900px;
-    margin: 0  25px;
-}
-
-.text h2{
-    width: fit-content;
-    font-size: 80px;
-    margin-bottom: 15px;
-    color: #00534F;
-    font-weight: bold;
-}
-
-.text-2 h2{
-    width: fit-content;
-    font-size: 80px;
-    margin-bottom: 15px;
-    color: #00534F;
-    font-weight: bold;
-}
-
-.text p{
-    width: fit-content;
-    font-size: 40px;
-    line-height: 1.5;
-}
-
-.text-2 p{
-    width: fit-content;
-    font-size: 40px;
-    line-height: 1.5;
-}
-
-.image-1{
-    flex:1;
-    margin: auto;
-}
-
-.image-2{
-    flex:1;
-    margin: auto;
-}
-
-.image-1 img{
-    position: relative;
+.image-1 img, .image-2 img {
     max-width: 100%;
-    width: 100%;
     height: auto;
-    display: flex;
+    display: block;
+    margin: 0 auto;
 }
 
-.image-2 img{
-    position: relative;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    display: flex;
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content, .content-2 {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center;
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .text, .text-2 {
+        margin: 20px 0;
+        text-align: center; /* Center text */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .text h2, .text-2 h2 {
+        margin-right: 37px;
+        font-size: 48px;
+    }
+
+    .text p, .text-2 p {
+        width: 520px;
+        font-size: 32px;
+        margin: 0 20px; /* Adjust margin for smaller screens */
+    }
+
+    .text-2 p{
+        width: 575px;
+        font-size: 32px;
+        margin: 0 20px; /* Adjust margin for smaller screens */
+    }
+
+    .image-1, .image-2 {
+        order: -1; /* Move image above text */
+        margin: 0 auto; /* Center the image */
+        margin-bottom: -20px;
+    }
+
+    .image-1 img, .image-2 img {
+        width: 400px;
+        height: 400px;
+    }
 }
