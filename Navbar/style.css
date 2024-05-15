@@ -1,0 +1,124 @@
+/* Body style */
+.bookmark img, .account img {
+    margin: 0;
+    padding: 0;
+    display: block; /* Menghapus whitespace di sekitar gambar */
+}
+
+.bookmark, .account {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border: none;
+    outline: none; /* Menghapus outline default */
+    background: none; /* Menghapus background default */
+    padding-right: 10px;
+}
+
+/* Navbar styles */
+.navbar-img img {
+    width: 150px;
+    height: auto;
+    padding-bottom: 14px;
+}
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #00534F;
+    color: aliceblue;
+    font-family: helvetica light;
+}
+
+.navbar-nav .nav-item {
+    padding-left: 70px;
+}
+
+/* Offcanvas styles */
+.offcanvas-start {
+    background-color: #00534F;
+    width: 320px !important;
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: center; /* Memposisikan gambar di tengah secara horizontal */
+    align-items: center; /* Memposisikan gambar di tengah secara vertikal */
+    position: relative;
+}
+
+.offcanvas-header .canvas-img img {
+    height: 60px;
+}
+
+.offcanvas-body .nav-link {
+    color: white;
+    padding: 10px 20px;
+    text-align: center; /* Memposisikan teks di tengah */
+    margin: 0; /* Menghapus margin default */
+    font-family: helvetica light;
+}
+
+.offcanvas-body .navbar-nav {
+    padding-left: 0;
+}
+
+.offcanvas-body .nav-item {
+    padding: 0; /* Menghapus padding default */
+    margin-bottom: 10px; /* Menambahkan margin bawah untuk jarak antar item */
+}
+
+/* Hide close button on larger screens */
+.btn-close {
+    display: none;
+}
+
+@media (max-width: 320px) {
+    .btn-close {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .offcanvas-header .canvas-img {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/* Hover effects */
+
+/* Hover effect for nav-item */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #C4D49D !important; /* Ubah warna teks saat dihover */
+}
+
+/* Hover effect for nav-item in offcanvas */
+.offcanvas-body .nav-link:hover {
+    color: #C4D49D !important; /* Ubah warna teks saat dihover */
+}
+
+/* Hover effect for burger button */
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Tambahkan background saat dihover */
+    border-radius: 5px; /* Beri border-radius agar tampak lebih halus */
+}
+
+/* Hover effect for bookmark image */
+.bookmark img:hover {
+    filter: brightness(0.8); /* Gelapkan gambar sedikit saat dihover */
+    transition: filter 0.3s ease; /* Tambahkan transisi untuk efek halus */
+}
+
+/* Hover effect for account image */
+.account img:hover {
+    filter: brightness(0.8); /* Gelapkan gambar sedikit saat dihover */
+    transition: filter 0.3s ease; /* Tambahkan transisi untuk efek halus */
+}
+
+/* Hover effect for close button on canvas */
+.offcanvas-header .btn-close:hover {
+    background-color:rgba(255, 255, 255, 0.1); /* Ubah warna latar belakang saat dihover */
+    color: #00534F; /* Ubah warna teks saat dihover */
+}
