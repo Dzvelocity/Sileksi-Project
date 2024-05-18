@@ -11,16 +11,69 @@ function toggleBookmark(imgElement) {
     }
 }
 
-function addBookmark(productId) {
-    let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
-    if (!bookmarks.includes(productId)) {
-        bookmarks.push(productId);
-        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
-    }
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const categoryButton = document.querySelector('.sidebar button:nth-child(1)');
+    const filterButton = document.querySelector('.sidebar button:nth-child(2)');
+    const sortbyButton = document.querySelector('.sidebar button:nth-child(3)');
+    const categoryPanel = document.getElementById('categoryPanel');
+    const filterPanel = document.getElementById('filterPanel');
+    const sortbyPanel = document.getElementById('sortbyPanel');
 
-function removeBookmark(productId) {
-    let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
-    bookmarks = bookmarks.filter(id => id !== productId);
-    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
-}
+    categoryButton.addEventListener('click', function () {
+        togglePanel(categoryPanel, categoryButton);
+        hideOtherPanels(filterPanel, sortbyPanel);
+    });
+
+    filterButton.addEventListener('click', function () {
+        togglePanel(filterPanel, filterButton);
+        hideOtherPanels(categoryPanel, sortbyPanel);
+    });
+
+    sortbyButton.addEventListener('click', function () {
+        togglePanel(sortbyPanel, sortbyButton);
+        hideOtherPanels(categoryPanel, filterPanel);
+    });
+
+    function togglePanel(panel, button) {
+        if (panel.classList.contains('show')) {
+            panel.classList.remove('show');
+            button.classList.remove('active');
+        } else {
+            panel.classList.add('show');
+            button.classList.add('active');
+        }
+    }
+
+    function hideOtherPanels(...panels) {
+        panels.forEach(panel => {
+            panel.classList.remove('show');
+        });
+        document.querySelectorAll('.sidebar button').forEach(button => {
+            button.classList.remove('active');
+        });
+    }
+
+    // Close the panel if clicked outside
+    window.addEventListener('click', function(event) {
+        if (!categoryPanel.contains(event.target) && !categoryButton.contains(event.target) &&
+            !filterPanel.contains(event.target) && !filterButton.contains(event.target) &&
+            !sortbyPanel.contains(event.target) && !sortbyButton.contains(event.target)) {
+            categoryPanel.classList.remove('show');
+            filterPanel.classList.remove('show');
+            sortbyPanel.classList.remove('show');
+            document.querySelectorAll('.sidebar button').forEach(button => {
+                button.classList.remove('active');
+            });
+        }
+    });
+
+    // Adding close icon functionality
+    const closeIcons = document.querySelectorAll('.close-icon');
+    closeIcons.forEach(icon => {
+        icon.addEventListener('click', function(event) {
+            const panel = event.target.closest('.panel');
+            const button = document.querySelector(`.sidebar button[data-panel="${panel.id}"]`);
+            togglePanel(panel, button);
+        });
+    });
+});
