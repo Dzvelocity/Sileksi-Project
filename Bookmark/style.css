@@ -37,6 +37,11 @@ body {
     color: #EFFDB2;
 }
 
+.sidebar button.active {
+    background-color: #00534F;
+    color: #EFFDB2;
+}
+
 .sidebar-select select {
     font-size: 20px;
     width: auto;
