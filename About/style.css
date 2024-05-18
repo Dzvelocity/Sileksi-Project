@@ -19,6 +19,10 @@ body {
     box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
+body, .content, .content-2, .text, .text-2, .image-1, .image-2 {
+    transition: all 0.3s ease-in-out;
+}
+
 .text, .text-2 {
     flex: 0;
     margin: 0 25px;
@@ -40,6 +44,10 @@ body {
     font-size: 40px;
     line-height: 1.5;
     margin: 0 50px; /* Indent paragraphs */
+}
+
+.text:hover, .text-2:hover {
+    transform: translateY(-10px); /* Move text up slightly on hover */
 }
 
 .image-1 img, .image-2 img {
