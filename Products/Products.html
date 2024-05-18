@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Grid</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+
     <div class="book-green">
         <a href="/Bookmark/Bookmark.html">
             <img src="Bookmark green.png" alt="">
@@ -17,6 +19,54 @@
         <button>Category</button>
         <button>Filters</button>
         <button>Sort by</button>
+    </div>
+
+
+    <div class="category-panel panel" id="categoryPanel">
+        <div class="close-icon" onclick="togglePanel(categoryPanel, categoryButton)">
+            <i class="fas fa-times"></i> <!-- Font Awesome close icon -->
+        </div>
+        <ul>
+            <img src="Logo Sileksi REVIISIIII 1.png" alt="SILEKSI">
+            <li class="head">Category</li>
+            <li>Kitchen Electronics</li>
+            <li>Television</li>
+            <li>Air Conditioner</li>
+            <li>Fridge & Freezer</li>
+            <li>Home Electronics</li>
+            <li>Washing Machine</li>
+            <li>Gadget Accessories</li>
+        </ul>
+    </div>
+            
+
+    <div class="filter-panel panel" id="filterPanel">
+        <div class="close-icon" onclick="togglePanel(filterPanel, filterButton)">
+            <i class="fas fa-times"></i> <!-- Font Awesome close icon -->
+            <ul>
+                <img src="Logo Sileksi REVIISIIII 1.png" alt="SILEKSI">
+                <li class="head">Filters</li>
+                <li>Brand</li>
+                <li>Price</li>
+                <li>Rating</li>
+                <li>Spesification</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="sortby-panel panel" id="sortbyPanel">
+        <div class="close-icon" onclick="togglePanel(sortbyPanel, sortbyButton)">
+            <i class="fas fa-times"></i> <!-- Font Awesome close icon -->
+        </div>
+        <ul>
+            <img src="Logo Sileksi REVIISIIII 1.png" alt="SILEKSI">
+            <li class="head">Sort by</li>
+            <li>Recommended</li>
+            <li>Top Products</li>
+            <li>Price asc</li>
+            <li>Price dsc</li>
+        </ul>
     </div>
 
     <div class="product-grid">
