@@ -10,18 +10,18 @@
 <body>
         
     <div class="sidebar">
-        <button class="all">All</button>
-        <button class="devices">Kitchen Electronics</button>
-        <button class="devices">Television</button>
-        <button class="devices">Air Conditioner</button>
-        <button class="devices">Fridge & Freezer</button>
-        <button class="devices">Home Electronics</button>
-        <button class="devices">Washing Machine</button>
-        <button class="devices">Gadget Accessories</button>
+        <button class="all" data-category="all" onclick="filterProducts('all')">All</button>
+        <button class="devices" data-category="kitchen-electronics" onclick="filterProducts('kitchen-electronics')">Kitchen Electronics</button>
+        <button class="devices" data-category="television" onclick="filterProducts('television')">Television</button>
+        <button class="devices" data-category="air-conditioner" onclick="filterProducts('air-conditioner')">Air Conditioner</button>
+        <button class="devices" data-category="fridge-freezer" onclick="filterProducts('fridge-freezer')">Fridge & Freezer</button>
+        <button class="devices" data-category="home-electronics" onclick="filterProducts('home-electronics')">Home Electronics</button>
+        <button class="devices" data-category="washing-machine" onclick="filterProducts('washing-machine')">Washing Machine</button>
+        <button class="devices" data-category="gadget-accessories" onclick="filterProducts('gadget-accessories')">Gadget Accessories</button>
     </div>
 
     <div class="sidebar-select">
-        <select id="category-select">
+        <select id="sidebar-menu" onchange="filterProducts(this.value)">
             <option value="all">All</option>
             <option value="kitchen-electronics">Kitchen Electronics</option>
             <option value="television">Television</option>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="product-grid">
-        <div class="product-card" id="product1">
+        <div class="product-card" id="product1" data-category="fridge-freezer">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product1')">
             </div>
@@ -45,7 +45,7 @@
             <p>Capacity: 100 W</p>
         </div>
 
-        <div class="product-card" id="product2">
+        <div class="product-card" id="product2" data-category="washing-machine">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product2')">
             </div>
@@ -56,7 +56,7 @@
             <p>Capacity: 290 W</p>
         </div>
 
-        <div class="product-card" id="product3">
+        <div class="product-card" id="product3" data-category="fridge-freezer">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product3')">
             </div>
@@ -67,7 +67,7 @@
             <p>Capacity: 40 W</p>
         </div>
 
-        <div class="product-card" id="product4">
+        <div class="product-card" id="product4" data-category="television">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product4')">
             </div>
@@ -78,7 +78,7 @@
             <p>Capacity: 450 W</p>
         </div>
 
-        <div class="product-card" id="product5">
+        <div class="product-card" id="product5" data-category="television">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product5')">
             </div>
@@ -89,7 +89,7 @@
             <p>Capacity: 55 W</p>
         </div>
 
-        <div class="product-card" id="product6">
+        <div class="product-card" id="product6" data-category="air-conditioner">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product6')">
             </div>
@@ -100,7 +100,7 @@
             <p>Capacity: 4 W</p>
         </div>
 
-        <div class="product-card" id="product7">
+        <div class="product-card" id="product7" data-category="fridge-freezer">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product7')">
             </div>
@@ -111,7 +111,7 @@
             <p>Capacity: 70 W</p>
         </div>
 
-        <div class="product-card" id="product8">
+        <div class="product-card" id="product8" data-category="washing-machine">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product8')">
             </div>
@@ -122,7 +122,7 @@
             <p>Capacity: 170 W</p>
         </div>
         
-        <div class="product-card" id="product9">
+        <div class="product-card" id="product9" data-category="gadget-accessories">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product9')">
             </div>
@@ -133,7 +133,7 @@
             <p>Capacity: 5 W</p>
         </div>
 
-        <div class="product-card" id="product10">
+        <div class="product-card" id="product10" data-category="fridge-freezer">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product10')">
             </div>
@@ -144,7 +144,7 @@
             <p>Capacity: 100 W</p>
         </div>
 
-        <div class="product-card" id="product11">
+        <div class="product-card" id="product11" data-category="washing-machine">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product11')">
             </div>
@@ -155,7 +155,7 @@
             <p>Capacity: 400 W</p>
         </div>
 
-        <div class="product-card" id="product12">
+        <div class="product-card" id="product12" data-category="home-electronics">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product12')">
             </div>
@@ -166,7 +166,7 @@
             <p>Capacity: 25 W</p>
         </div>
 
-        <div class="product-card" id="product13">
+        <div class="product-card" id="product13" data-category="kitchen-electronics">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product13')">
             </div>
@@ -177,7 +177,7 @@
             <p>Capacity: 450 W</p>
         </div>
 
-        <div class="product-card" id="product14">
+        <div class="product-card" id="product14" data-category="kitchen-electronics">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product14')">
             </div>
@@ -188,7 +188,7 @@
             <p>Capacity: 900 W</p>
         </div>
 
-        <div class="product-card" id="product15">
+        <div class="product-card" id="product15" data-category="television">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product15')">
             </div>
@@ -199,7 +199,7 @@
             <p>Capacity: 80 W</p>
         </div>
 
-        <div class="product-card" id="product16">
+        <div class="product-card" id="product16" data-category="television">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product16')">
             </div>
@@ -210,7 +210,7 @@
             <p>Capacity: 50 W</p>
         </div>
 
-        <div class="product-card" id="product17">
+        <div class="product-card" id="product17" data-category="kitchen-electronics">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product17')">
             </div>
@@ -221,7 +221,7 @@
             <p>Capacity: 250 W</p>
         </div>
 
-        <div class="product-card" id="product18">
+        <div class="product-card" id="product18" data-category="home-electronics">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product18')">
             </div>
@@ -232,7 +232,7 @@
             <p>Capacity: 350 W</p>
         </div>
 
-        <div class="product-card" id="product19">
+        <div class="product-card" id="product19" data-category="kitchen-electronics">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product19')">
             </div>
@@ -243,7 +243,7 @@
             <p>Capacity: 400 W</p>
         </div>
 
-        <div class="product-card" id="product20">
+        <div class="product-card" id="product20" data-category="kitchen-electronics">
             <div class="border-book">
                 <img src="bookmark fill.png" class="book-pic" onclick="toggleBookmark(this, 'product20')">
             </div>
