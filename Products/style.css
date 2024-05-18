@@ -33,6 +33,77 @@ body {
     height: 50px;
 }
 
+/* Panel Style */
+.panel {
+    position: fixed;
+    top: 0;
+    left: -695px; /* Initially hide the panel off-screen */
+    width: 645px;
+    height: 100vh;
+    background-color: #00534F;
+    color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    transition: left 0.3s ease-in-out; /* Transition effect */
+}
+
+.close-icon {
+    top: 1000px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.close-icon i {
+    font-size: 40px;
+}
+
+
+.panel.show {
+    left: 0; /* Position the panel in view */
+}
+
+.panel ul {
+    margin-top: 100px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.panel li {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 10px 0;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+.panel .head{
+    display: none;
+}
+
+.panel img {
+    margin-top: -100px;
+    width: 298px;
+    height: 102px;
+    cursor: default;
+    margin-left: 185px;
+}
+
+.panel li:hover {
+    padding-left: 10px; /* Add some space on the left to give a hover effect */
+    transition: padding-left 0.3s; /* Smooth transition effect */
+}
+
+/* Style for buttons to show active state */
+.sidebar button.active {
+    background-color: #007f7f;
+}
+
+
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -140,6 +211,49 @@ body {
         height: 40px;
     }
 
+    .panel {
+        width: 460px;
+        height: 100vh;
+        border-radius:0px;
+    }
+    
+    .close-icon {
+        cursor: pointer;
+    }
+    
+    .close-icon i {
+        font-size: 30px;
+    }
+
+    .panel ul {
+        margin-top: 70px;
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .panel img {
+        margin-top: -60px;
+        width: 298px;
+        height: 102px;
+        margin-left: 95px;
+    }
+
+    .panel .head{
+        display: block;
+        margin-top: 15px;
+        margin-left: 10px;
+        padding: 10px 0;
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 70px;
+    }
+
+    .panel li {
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
     .product-grid {
         grid-template-columns: repeat(3, 1fr); 
         gap: 50px;
@@ -218,6 +332,51 @@ body {
         margin-top: -25px;
         width: 65px;
         height: 25px;
+    }
+
+    .panel {
+        width: 320px;
+        height: 100vh;
+        border-radius:0px;
+    }
+
+    .close-icon {
+        left: 20px;
+    }
+    
+    .close-icon i {
+        font-size: 20px;
+    }
+    
+    .panel ul {
+        margin-right: 40px;
+        margin-top: 20px;
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .panel img {
+        margin-top: -30px;
+        width: 123px;
+        height: 42px;
+        margin-left: 85px;
+    }
+
+    .panel .head{
+        display: block;
+        margin-top: 5px;
+        margin-left: 1px;
+        padding: 10px 0;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .panel li {
+        margin-top: 5px;
+        margin-left: 1px;
+        font-size: 17px;
+        font-weight: 360;
     }
 
     .product-grid {
