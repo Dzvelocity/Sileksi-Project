@@ -11,6 +11,22 @@ function toggleBookmark(imgElement) {
     }
 }
 
+function filterProducts(category) {
+    var productCards = document.querySelectorAll('.product-card');
+    var buttons = document.querySelectorAll('.sidebar button');
+
+    // Tampilkan atau sembunyikan produk berdasarkan kategori
+    productCards.forEach(function(card) {
+        if (category === 'all') {
+            card.style.display = 'block';
+        } else if (card.getAttribute('data-category') === category) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const categoryButton = document.querySelector('.sidebar button:nth-child(1)');
     const filterButton = document.querySelector('.sidebar button:nth-child(2)');
