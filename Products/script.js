@@ -10,3 +10,17 @@ function toggleBookmark(imgElement) {
         imgElement.classList.remove('filled');
     }
 }
+
+function addBookmark(productId) {
+    let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+    if (!bookmarks.includes(productId)) {
+        bookmarks.push(productId);
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+    }
+}
+
+function removeBookmark(productId) {
+    let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+    bookmarks = bookmarks.filter(id => id !== productId);
+    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+}
