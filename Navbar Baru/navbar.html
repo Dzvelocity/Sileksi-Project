@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav>
+        <div class="burger-wrapper">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+        </div>
+        <div class="logo-navbar">
+            <a href="#">
+                <img src="Logo.png" alt="SILEKSI">
+            </a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Calculations</a></li>
+            </ul>
+        </div>
+        <div class="right-icons">
+            <a href="#" class="bookmark-button">
+                <img src="Bookmark.png" alt="Bookmark" height="25px">
+            </a>
+            <a href="#" class="account-button">
+                <img src="Account.png" alt="Account" height="25px">
+            </a>
+        </div>
+        <div class="overlay"></div>
+        <div class="dropdown-menu">
+            <div class="logo-container">
+                <img src="Logo.png" alt="Logo" class="dropdown-logo">
+            </div>
+            <div class="separator"></div>
+            <div class="dropdown-list">
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Calculations</a>
+                <a href="#">Bookmark</a>
+            </div>
+            <div class="dropdown-account-separator">
+                <div class="separator"></div>
+                <div class="dropdown-account">
+                    <img src="profile.jpeg" alt="profile">
+                    <p class="nickname">jokonowo</p>
+                </div>
+            </div>
+        </div>
+        <script src="navbar.js"></script>
+    </nav>
+</body>
+</html>
