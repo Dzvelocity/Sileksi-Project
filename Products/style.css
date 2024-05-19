@@ -210,7 +210,7 @@ body {
     }
 
     .sidebar {
-        margin: -47px auto;
+        margin: 20px auto;
         flex-direction: row; 
         flex-wrap: wrap; 
         justify-content: center;
