@@ -204,16 +204,9 @@ body {
         flex-direction: column;
         margin-top: 0px;
     }
-
+    
     .book-green{
-        display: block;
-        margin-top: 45px;
-        margin-left: 40px;
-    }
-
-    .book-green img{
-        width: 30px;
-        height: 35px;
+        display: none
     }
 
     .sidebar {
