@@ -265,6 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 1189000,
             capacity: "450 W",
             image: "https://id.sharp/sites/default/files/styles/resize_640x640/public/2018-11/R-21D0%28S%29IN.jpg?itok=Eyl6rtCW",
+            link: "navbar.html"
         },
         {
             name: "Panasonic 25 Ltr Microwave NN-ST32NBTTE",
@@ -274,6 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 2449000,
             capacity: "450 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_400,h_400/f_auto,q_auto:eco/v1682523004/Products/10521776_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "SAMSUNG 23 Ltr Microwave MS23K3515AS/SE",
@@ -283,6 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 1479000,
             capacity: "900 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_400,h_400/f_auto,q_auto:eco/v1611846241/Products/10198032_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Kels 300 MI Rice Cooker Mini",
@@ -292,6 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 699000,
             capacity: "250 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_500,h_500/f_auto,q_auto:eco/v1637247881/Products/10453251_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Philips 1.8 L Rice Cooker Digital HD4515/85",
@@ -301,6 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 939000,
             capacity: "400 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload//f_auto,q_auto:eco/v1629127230/Products/10448645_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Panasonic 1.8 L Rice Cooker SR-CEZ18SR ",
@@ -310,6 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 779000,
             capacity: "400 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_360,h_360,f_auto,q_auto/f_auto,q_auto:eco/v1706583982/Products/10535926_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Philips Blender HR2042/13 1L - Red",
@@ -319,6 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 479000,
             capacity: "290 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_500,h_500/f_auto,q_auto:eco/v1690844789/Products/10535920_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Sharp Blender EM-151P-WH 1.5L White",
@@ -328,6 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 429000,
             capacity: "350 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_500,h_500/f_auto,q_auto:eco/v1697562447/Products/10516561_1.jpg",
+            link: "navbar.html"
         },
             {
             name: "Beko Blender TBN7400W 1.75L White",
@@ -337,6 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 649000,
             capacity: "400 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload//f_auto,q_auto:eco/v1645685889/Products/10238809_1.jpg",
+            link: "navbar.html"
         },
     
         //televisions
@@ -347,6 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 2150000,
             capacity: "55 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_360,h_360,f_auto,q_auto/f_auto,q_auto:eco/v1713924233/Products/10581904_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Smart TV 4K LG UHD UR7500PSC 43 inci",
@@ -355,6 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 5349000,
             capacity: "80 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_360,h_360,f_auto,q_auto/f_auto,q_auto:eco/v1686229546/Products/10537135_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Sharp 4TC55FJI X 55 Inch UHD Google TV",
@@ -363,6 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 8899000,
             capacity: "50 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_500,h_500/f_auto,q_auto:eco/v1709132758/Products/10579132_1.jpg",
+            link: "navbar.html"
         },
     
         //ac
@@ -373,6 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 7529000,
             capacity: "2 PK",
             image: "https://images.samsung.com/is/image/samsung/p6pim/id/ar18ayhlawknse/gallery/id-am5000hmar05ayhlawknse-ar18ayhlawknse-534498743?$730_584_PNG$",
+            link: "navbar.html"
         },
         {
             name: "Daikin AC Single STC15NV ½ PK",
@@ -381,6 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 5039000,
             capacity: "800 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_360,h_360,f_auto,q_auto/f_auto,q_auto:eco/v1637594013/Products/10312990_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Panasonic AC CS/CU-XPU5XKJ ½ PK (U/3)",
@@ -389,6 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 8729000,
             capacity: "410 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_360,h_360,f_auto,q_auto/f_auto,q_auto:eco/v1652973773/Products/10466877_1.jpg",
+            link: "navbar.html"
         },
     
         //home electronics
@@ -400,6 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 2469000,
             capacity: "290 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_200,h_200/v1708680323/Products/10571684_2.webp",
+            link: "navbar.html"
         },
         {
             name: "SHARP Top Loading ES-M8500XT",
@@ -409,6 +425,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 3637000,
             capacity: "170 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_400,h_400/f_auto,q_auto:eco/v1640013136/Products/10431882_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "LG Top Loading T2107VSPCK",
@@ -418,6 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 4719000,
             capacity: "400 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_400,h_400/f_auto,q_auto:eco/v1651123581/Products/10350339_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Kris Kipas Angin Berdiri Mechanical",
@@ -427,6 +445,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 699000,
             capacity: "40 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_500,h_500/f_auto,q_auto:eco/v1710511673/Products/10509403_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Kels Shea Kipas Angin USB Rechargeable",
@@ -436,6 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 199000,
             capacity: "5 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_400,h_400/f_auto,q_auto:eco/v1605885508/Products/10420761_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Krisbow 16 Inci Kipas Angin Uap",
@@ -445,6 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 1899000,
             capacity: "25 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_400,h_400/f_auto,q_auto:eco/v1589173555/Products/10378644_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Kels Dry Iron",
@@ -454,6 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 159000,
             capacity: "350 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload//f_auto,q_auto:eco/v1662615546/Products/10487084_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Philips Dry Iron HD1173/80",
@@ -463,6 +485,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 369000,
             capacity: "350 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_500,h_500/f_auto,q_auto:eco/v1526400662/Products/10084266_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Cosmos Iron CIS-418",
@@ -472,6 +495,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 149000,
             capacity: "400 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_500,h_500/f_auto,q_auto:eco/v1641878535/Products/10186072_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Sharp Vacuum Cleaner EC-NS-18-RD Red",
@@ -481,6 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 920550,
             capacity: "450 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_500,h_500/f_auto,q_auto:eco/v1619450475/Products/10218915_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "Samsung Vacuum Cleaner Robot VR05R5050WK/SE 0.2 L",
@@ -490,6 +515,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 4409000,
             capacity: "55 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload//f_auto,q_auto:eco/v1666110510/Products/10469309_2.jpg",
+            link: "navbar.html"
         },
         {
             name: "Electrolux Vacuum Ergorapido WQ61-10GG",
@@ -499,6 +525,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 4279000,
             capacity: "18 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/l_2.1:c5f05d:8cb583/w_738,h_738/f_auto,q_auto:eco/v1637766498/Products/10443175_1.jpg",
+            link: "navbar.html"
         },
     
         //fridge
@@ -509,6 +536,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 4279000,
             capacity: "100 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_400,h_400/f_auto,q_auto:eco/v1526313750/Products/10084478_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "LG Kulkas 2 Pintu GN-G222SCLB",
@@ -517,6 +545,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 5359000,
             capacity: "70 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_400,h_400/f_auto,q_auto:eco/v1638508098/Products/10444370_1.jpg",
+            link: "navbar.html"
         },
         {
             name: "SAMSUNG Kulkas 2 Pintu RT-22FARBDSA",
@@ -525,11 +554,37 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 5529000,
             capacity: "100 W",
             image: "https://res.cloudinary.com/ruparupa-com/image/upload/w_400,h_400/f_auto,q_auto:eco/v1611846804/Products/X141805_1.jpg",
+            link: "navbar.html"
         }
         // Tambahkan produk lain 
     ];
     
         const productContainer = document.querySelector('.product-list');
+
+        productContainer.addEventListener('click', (event) => {
+            // Periksa apakah elemen yang diklik adalah tombol
+            if (event.target.tagName === 'BUTTON' && event.target.closest('.product-item')) {
+                // Dapatkan informasi produk dari elemen .product-item
+                const productItem = event.target.closest('.product-item');
+                const productName = productItem.querySelector('h2').textContent;
+                
+                // Cari produk yang sesuai dalam array produk
+                const clickedProduct = products.find(product => product.name === productName);
+                
+                // Redirect pengguna ke halaman produk yang sesuai
+                if (clickedProduct && clickedProduct.link) {
+                    sessionStorage.setItem('recommendationVisible', recommendationSection.style.display);
+                    window.open(clickedProduct.link, '_blank');
+                } else {
+                    console.error("Product link not found for:", productName);
+                }
+            }
+        });
+    
+        const previousRecommendationStatus = sessionStorage.getItem('recommendationVisible');
+        if (previousRecommendationStatus && previousRecommendationStatus === 'block') {
+            recommendationSection.style.display = 'block';
+        }
     
         function renderProducts(products) {
             productContainer.innerHTML = ''; // Bersihkan kontainer produk terlebih dahulu
