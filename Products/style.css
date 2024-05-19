@@ -120,10 +120,10 @@ body {
 }
 
 /* Style for buttons to show active state */
-.sidebar button.active {
-    background-color: #007f7f;
+.sidebar button:hover {
+    background-color: #00534F;
+    color: #EFFDB2;
 }
-
 
 
 .product-grid {
