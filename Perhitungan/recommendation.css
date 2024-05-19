@@ -77,7 +77,7 @@ header h1 strong {
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 10px;
 }
 
@@ -363,11 +363,19 @@ header h1 strong {
     body {
         overflow-x: hidden;
     }
+
+    header h1 {
+        margin-top: 5%; /* Ubah margin atas untuk judul */
+        font-size: 30px; /* Ubah ukuran font judul */
+        max-width: 50%;
+        margin-left: 25%;
+    }
+
     .product-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 10px;
+        justify-content: flex-start;
+        margin-left: 20px;
     }
     
     .product-item {
@@ -438,6 +446,13 @@ header h1 strong {
             padding: 20px;
             width: 70%;
             max-width: 300px;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-left: 10px;
         }
 
         .product-item {
@@ -559,6 +574,12 @@ header h1 strong {
             width: 32px;
             height: 10px;
             transition: transform 0.2s; /* Menambahkan transisi halus */
+        }
+
+        .view-more-link {
+            position: relative;
+            font-size: 10px;
+            top: 0px;
         }
     }
 }

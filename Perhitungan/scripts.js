@@ -141,8 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     
         // nilai savings "You can save"
-        const savingsAmount = document.querySelector('.savings-amount');
-        savingsAmount.textContent = savings + " W";
+        const savingsAmount = document.querySelector('.savings-amount').textContent = "You can save: ± " + savings + " W";
     
         renderProducts(recommendedProducts);
     }
@@ -669,8 +668,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#category-select-menu .sBtn-text').innerText = defaultCategory;
             document.querySelector('#brand-select-menu .sBtn-text').innerText = defaultBrand;
             document.querySelector('#market-price-select-menu .sBtn-text').innerText = defaultPrice;
-    
-            // Menampilkan semua produk tanpa filter
+
+            document.querySelector('.savings-amount').textContent = "Here's all our recommended products";
+
             renderProducts(products);
     
         });
