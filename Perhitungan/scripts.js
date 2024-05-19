@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'TV': 55,
         'Iron': 300,
         'LED Lamp': 8,
-        'AC': 360
+        'AC': 1600
     };
 
     let totalUsage = 0;
