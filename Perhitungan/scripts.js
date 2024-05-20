@@ -20,10 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalUsage = 0;
     let selectedCapacity = null;
 
-    document.querySelector('.checkout-btn').addEventListener('click', () => {
-        document.getElementById('recommendationSection').style.display = 'block';
-    });
-
     addDeviceBtn.addEventListener('click', () => {
         const deviceType = document.getElementById('deviceType').value;
     
@@ -46,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
             totalUsage += wattage;
             updateTotalUsage();
+            updateResult();
     
             // Update recommendations
             updateRecommendations();
@@ -233,28 +230,48 @@ document.addEventListener('DOMContentLoaded', () => {
     capacityOptions.forEach(option => {
         option.addEventListener('click', () => {
             const isActive = option.classList.contains('active');
-            const capacity = option.textContent.trim();
-            selectedCapacity = capacity === 'Other' ? parseInt(prompt('Input your house electrical capacity (in VA):')) : parseInt(capacity);
-
-            if (isNaN(selectedCapacity)) {
-                alert('Please input a valid number');
-                selectedCapacity = null;
-                return;
-            }
-
-            capacityOptions.forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            if (!isActive) {
-                option.classList.add('active');
+            let capacity = option.textContent.trim();
+    
+            if (capacity === 'Other') {
+                // Show custom modal or prompt for user input
+                const userCapacity = parseInt(prompt('Input your house electrical capacity (in VA):'));
+                if (isNaN(userCapacity)) {
+                    alert('Please input a valid number');
+                    return;
+                } else {
+                    selectedCapacity = userCapacity;
+                    option.textContent = `${userCapacity}VA`;
+                }
             } else {
-                selectedCapacity = null;
+                selectedCapacity = parseInt(capacity);
+                if (isNaN(selectedCapacity)) {
+                    alert('Please input a valid number');
+                    selectedCapacity = null;
+                    return;
+                }
             }
-
+    
+            updateCapacityButtons(option, isActive);
             updateResult();
         });
     });
+    
+    function updateCapacityButtons(option, isActive) {
+        capacityOptions.forEach(btn => {
+            btn.classList.remove('active');
+        });
+    
+        if (!isActive) {
+            option.classList.add('active');
+        } else {
+            selectedCapacity = null;
+        }
+    }
+
+    document.querySelector('.checkout-btn').addEventListener('click', () => {
+        document.getElementById('recommendationSection').style.display = 'block';
+    });
+
     const products = [
         //kitchen electronics
         {
