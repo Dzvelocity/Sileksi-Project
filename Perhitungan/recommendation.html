@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation for Saving</title>
+    <link rel="stylesheet" href="recommendation.css">
+</head>
+<body>
+    <header>
+        <h1>We <strong>recommend</strong> the best choice for saving</h1>
+    </header>
+    <div class="container">
+        <div class="savings">
+            <div class="product-background">
+                <span>You can save:</span>
+                <span class="savings-amount"></span>
+            </div>
+            <button class="filter-button" id="openFilterPopup">
+                <img src="filter.png" alt="filter icon">
+            </button>
+            <main>
+                <div class="product-list">
+                    <!-- Produk akan ditampilkan di sini oleh JavaScript -->
+                </div>
+                <a href="#" class="view-more-link">View More</a>
+            </main>
+        </div>
+    </div>
+    
+    <!-- Popup -->
+    <div class="popup" id="filterPopup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <div class="select-menu" id="category-select-menu">
+                <div class="select-btn">
+                    <span class="sBtn-text">Category</span>
+                    <img src="arrow.png" alt="Arrow" class="dropdown-arrow">
+                </div>
+                <ul class="options">
+                    <li class="option">
+                        <span class="option-text">Kitchen Electronics</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Televisions</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Air Conditioner</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Fridge & Freezer</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Home Electronics</span>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="select-menu" id="brand-select-menu">
+                <div class="select-btn">
+                    <span class="sBtn-text">Brand</span>
+                    <img src="arrow.png" alt="Arrow" class="dropdown-arrow">
+                </div>
+                <ul class="options">
+                    <li class="option">
+                        <span class="option-text">Samsung</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">LG</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Sharp</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Xiaomi</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Panasonic</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Kels</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Krisbow</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Cosmos</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Electrolux</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Philips</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Daikin</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Aqua</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Beko</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="select-menu" id="market-price-select-menu">
+                <div class="select-btn">
+                    <span class="sBtn-text">Market Price</span>
+                    <img src="arrow.png" alt="Arrow" class="dropdown-arrow">
+                </div>
+                <ul class="options">
+                    <li class="option">
+                        <span class="option-text">Lowest</span>
+                    </li>
+                    <li class="option">
+                        <span class="option-text">Highest</span>
+                    </li>
+                </ul>
+            </div>
+            <span class="button-container">
+                <button id="resetFilterButton" class="reset-button">Reset</button>
+                <button id="applyFilterButton">Apply</button>
+            </span>
+        </div>
+    </div>
+
+    <script src="rekomendasi.js"></script>
+</body>
+</html>

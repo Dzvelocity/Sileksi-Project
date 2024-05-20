@@ -4,19 +4,6 @@ body {
     background-color: #f7f7e8;
 }
 
-*::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: rgba(166, 166, 166, 0.5);
-    border-radius: 20px;
-  }
-
 header {
     text-align: center;
     margin: 20px 0;
@@ -62,7 +49,6 @@ header h1 strong {
 
 .savings-amount {
     font-size: 30px;
-    font-weight: bold;
 }
 
 .product-background {
@@ -78,7 +64,7 @@ header h1 strong {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 10px;
+    margin: 8px;
 }
 
 .product-list .product-item h2 {
@@ -371,6 +357,10 @@ header h1 strong {
         margin-left: 25%;
     }
 
+    .savings-amount {
+        font-size: 26px;
+    }
+
     .product-list {
         display: flex;
         flex-wrap: wrap;
@@ -408,7 +398,7 @@ header h1 strong {
         position: relative;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 320px) {
         /* Aturan CSS yang disesuaikan */
         header h1 {
             margin-top: 5%; /* Ubah margin atas untuk judul */
@@ -452,7 +442,7 @@ header h1 strong {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-            margin-left: 10px;
+            margin: 3px;
         }
 
         .product-item {

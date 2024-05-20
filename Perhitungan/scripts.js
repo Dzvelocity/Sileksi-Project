@@ -88,32 +88,32 @@ document.addEventListener('DOMContentLoaded', () => {
         for (const deviceType in deviceTypeCount) {
             if (deviceTypeCount.hasOwnProperty(deviceType)) {
                 const count = deviceTypeCount[deviceType];
-                const wattageThreshold = deviceWattageMap[deviceType];
+                const wattage = deviceWattageMap[deviceType];
                 let productsOfType = [];
     
                 // Filter produk yang sesuai dengan tipe perangkat dan memiliki kapasitas (watt) terkecil yang memenuhi kebutuhan penggunaan
                 if (deviceType === 'Fridge') {
-                    productsOfType = products.filter(product => product.category === 'Fridge' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.category === 'Fridge' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'Microwave') {
-                    productsOfType = products.filter(product => product.spesific === 'Microwave' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.spesific === 'Microwave' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'Rice Cooker') {
-                    productsOfType = products.filter(product => product.spesific === 'Rice cooker' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.spesific === 'Rice cooker' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'Blender') {
-                    productsOfType = products.filter(product => product.spesific === 'Blender' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.spesific === 'Blender' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'Washing Machine') {
-                    productsOfType = products.filter(product => product.spesific === 'Wasing Machine' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.spesific === 'Wasing Machine' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'Vaccum Cleaner') {
-                    productsOfType = products.filter(product => product.spesific === 'Vacuum' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.spesific === 'Vacuum' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'Fan') {
-                    productsOfType = products.filter(product => product.spesific === 'Kipas' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.spesific === 'Kipas' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'TV') {
-                    productsOfType = products.filter(product => product.category === 'Televisions' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.category === 'Televisions' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'Iron') {
-                    productsOfType = products.filter(product => product.spesific === 'Iron' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.spesific === 'Iron' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'LED Lamp') {
-                    productsOfType = products.filter(product => product.spesific === 'Lamp' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.spesific === 'Lamp' && parseInt(product.capacity) < wattage);
                 } else if (deviceType === 'AC') {
-                    productsOfType = products.filter(product => product.category === 'Air Conditioner' && parseInt(product.capacity) < wattageThreshold);
+                    productsOfType = products.filter(product => product.category === 'Air Conditioner' && parseInt(product.capacity) < wattage);
                 }
     
                 // Jika ada rekomendasi untuk tipe perangkat ini, ambil kapasitas (watt) terkecil dari produk-produk yang memenuhi kriteria
