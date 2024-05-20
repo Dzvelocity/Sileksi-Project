@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const savingsAmount = document.querySelector('.savings-amount').textContent = "You can save: ± " + savings + " W";
     
         renderProducts(recommendedProducts);
+        updateRecommendations(filteredProducts);
     }
 
     deviceList.addEventListener('click', (e) => {
@@ -590,8 +591,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             products.forEach(product => {
     
-                const productName = product.name.length > 20 ? product.name.slice(0, 20) + '...' : product.name;
-    
                 const productItem = document.createElement('div');
                 productItem.classList.add('product-item');
     
@@ -654,7 +653,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         setupDropdown('category-select-menu');
         setupDropdown('brand-select-menu');
-        setupDropdown('market-price-select-menu');
+        setupDropdown('watt-select-menu');
     
         const resetFilterButton = document.getElementById('resetFilterButton');
     
@@ -662,12 +661,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Mengatur nilai default untuk setiap dropdown
             const defaultCategory = 'Category';
             const defaultBrand = 'Brand';
-            const defaultPrice = 'Market Price';
+            const defaultWatt = 'Watt';
     
             // Mengatur kembali teks pada tombol dropdown sesuai dengan nilai default
             document.querySelector('#category-select-menu .sBtn-text').innerText = defaultCategory;
             document.querySelector('#brand-select-menu .sBtn-text').innerText = defaultBrand;
-            document.querySelector('#market-price-select-menu .sBtn-text').innerText = defaultPrice;
+            document.querySelector('#watt-select-menu .sBtn-text').innerText = defaultWatt;
 
             document.querySelector('.savings-amount').textContent = "Here's all our recommended products";
 
@@ -680,7 +679,7 @@ document.addEventListener('DOMContentLoaded', () => {
         applyFilterButton.addEventListener('click', () => {
             const selectedCategory = document.querySelector('#category-select-menu .sBtn-text').innerText;
             const selectedBrand = document.querySelector('#brand-select-menu .sBtn-text').innerText;
-            const selectedPrice = document.querySelector('#market-price-select-menu .sBtn-text').innerText;
+            const selectedCapacity = document.querySelector('#watt-select-menu .sBtn-text').innerText;
     
             let filteredProducts = products;
     
@@ -692,10 +691,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 filteredProducts = filteredProducts.filter(product => product.brand === selectedBrand);
             }
     
-            if (selectedPrice === 'Lowest') {
-                filteredProducts = filteredProducts.sort((a, b) => a.price - b.price);
-            } else if (selectedPrice === 'Highest') {
-                filteredProducts = filteredProducts.sort((a, b) => b.price - a.price);
+            if (selectedCapacity === 'Lowest') {
+                filteredProducts = filteredProducts.sort((a, b) => parseInt(a.capacity) - parseInt(b.capacity));
+            } else if (selectedCapacity === 'Highest') {
+                filteredProducts = filteredProducts.sort((a, b) => parseInt(b.capacity) - parseInt(a.capacity));
             }
     
             renderProducts(filteredProducts);
