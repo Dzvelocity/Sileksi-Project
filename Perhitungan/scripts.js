@@ -141,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const savingsAmount = document.querySelector('.savings-amount').textContent = "You can save: ± " + savings + " W";
     
         renderProducts(recommendedProducts);
+        updateRecommendations(filteredProducts);
 
     }
 
@@ -715,7 +716,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
     
             renderProducts(filteredProducts);
-            updateRecommendations(filteredProducts);
             filterPopup.style.display = 'none';
         });
     });
