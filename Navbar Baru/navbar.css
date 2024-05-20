@@ -12,10 +12,10 @@ nav {
     padding: 0 20px;
     color: white;
     height: 100px;
-    position: fixed; /* Added */
-    top: 0; /* Added */
-    width: 100%; /* Added */
-    z-index: 1000; /* Added */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav .logo-navbar {
@@ -39,7 +39,7 @@ nav .nav-links ul {
 
 nav .nav-links li {
     margin-left: 50px;
-    font-family: helvetica;
+    font-family: helvetica light;
 }
 
 nav .nav-links a {
@@ -73,7 +73,7 @@ nav .right-icons .account-button {
 }
 
 .dropdown-menu {
-    font-family: helvetica;
+    font-family: helvetica light;
     display: flex;
     flex-direction: column;
     position: fixed;
