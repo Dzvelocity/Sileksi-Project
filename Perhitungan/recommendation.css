@@ -376,16 +376,11 @@ header h1 strong {
         width: 250px;
     }
     .popup {
-        display: flex;
-        position: absolute;
-        z-index: 1000;
-        left: 0;
-        top: 0;
         width: 100%;
     }
     
     .popup-content {
-        margin: 45% auto;
+        margin: auto;
         padding: 20px;
         width: 80%;
         max-width: 400px;
@@ -423,19 +418,21 @@ header h1 strong {
         }
 
         .popup {
-            display: flex;
-            position: absolute;
-            z-index: 1000;
-            left: 0;
-            top: 0;
             width: 100%;
         }
         
         .popup-content {
-            margin: 45% auto;
+            margin: auto;
             padding: 20px;
-            width: 70%;
-            max-width: 300px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Menengahkan secara vertikal */
+            position: relative;
         }
 
         .product-list {
@@ -479,11 +476,7 @@ header h1 strong {
             width: auto; /* Lebar otomatis untuk tombol filter */
             margin: 10px 0; /* Ubah margin tombol filter */
         }
-    
-        #applyFilterButton {
-            width: 50%; /* Ubah lebar tombol apply filter */
-            margin-bottom: 10px; /* Ubah margin bawah tombol apply filter */
-        }
+
         .view-more-link {
             position: relative;
             font-size: 10px;
@@ -545,7 +538,7 @@ header h1 strong {
             cursor: pointer;
             font-size: 10px;
             font-weight: bold;
-            margin-bottom: 5%;
+            margin-bottom: 15%;
             max-height: 50%;
             width: calc(50% - 5px); /* Lebar tombol apply, dikurangi margin */
         }
